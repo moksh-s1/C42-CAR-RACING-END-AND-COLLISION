@@ -1,24 +1,23 @@
 var canvas;
 var backgroundImage, car1_img, car2_img, track;
-var fuelImage, powerCoinImage, lifeImage;
-var obstacle1Image, obstacle2Image;
-var blastImage;
+var fuelImage, powerCoinImage, lifeImage, obstacle1Image, obstacle2Image; 
+var blastImage;                   //C42// SA
 var database, gameState;
 var form, player, playerCount;
-var allPlayers, car1, car2, fuels, powerCoins, obstacles;
+var allPlayers, car1, car2, fuels, powerCoins, obstacles; 
 var cars = [];
 
 function preload() {
   backgroundImage = loadImage("./assets/background.png");
-  blastImage = loadImage("./assets/blast.png")
-  car1_img = loadImage("../assets/car1.png");
-  car2_img = loadImage("../assets/car2.png");
-  track = loadImage("../assets/track.jpg");
-  fuelImage = loadImage("./assets/fuel.png");
-  powerCoinImage = loadImage("./assets/goldCoin.png");
-  obstacle1Image = loadImage("./assets/obstacle1.png");
-  obstacle2Image = loadImage("./assets/obstacle2.png");
-  lifeImage = loadImage("./assets/life.png");
+  car1_img = loadImage("assets/car1.png");
+  car2_img = loadImage("assets/car2.png");
+  track = loadImage("assets/track.jpg");
+  fuelImage = loadImage("assets/fuel.png");
+  powerCoinImage = loadImage("assets/goldCoin.png");
+  lifeImage = loadImage("assets/life.png");
+  obstacle1Image = loadImage("assets/obstacle1.png"); 
+  obstacle2Image = loadImage("assets/obstacle2.png"); 
+  blastImage = loadImage("assets/blast.png"); //C42 //SA
 }
 
 function setup() {
